@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo 10 - saidas</title>
+</head>
+<body>
+    <h2>Oi, esse site contem exemplos de saidas com js</h2>
+    <p id="demo"></p>
+    <button onclick="teste()">clique</button>
+    <button onclick="print()">print</button>
+
+    <script>
+        for (let contadora = 0; contadora <= 10; contadora++) {
+            //aparece no terminal e no colose do navegador
+            console.log(contadora)
+        }
+        
+        //pega o id e modifica a o elemento com o id selecionado
+        document.getElementById('demo').innerHTML = 5 + 2;
+
+        //duas formas de utilizar write
+        document.write(2*4)
+        function teste(){
+            //se utilizar ele no onclick, some todo o conteudo da pagina
+            document.write(5*5)
+        }
+
+        //alert pode ser utilizado dessas duas formas
+        window.alert("seja bem-vindoax")
+        alert(5-3)
+        
+    </script>
+</body>
+</html>
