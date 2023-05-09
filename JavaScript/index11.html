@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index 11 - variaveis</title>
+</head>
+<body>
+    <h1>tipos de variaveis</h1>
+    <h3>utiliza var</h3>
+    <p id="var"></p>
+    <h3>utiliza let</h3>
+    <p id="let"></p>
+    <h3>utiliza nada</h3>
+    <p id="nada"></p>
+    <h3>utiliza const</h3>
+    <p id="const"></p>
+
+    <script>
+        //var = pode criar duas variaveis com o mesmo nome
+        var x = 4;
+        var y = 3;
+        var z = x + y;
+
+        document.getElementById('var').innerHTML = x+" + "+y+" = "+z;
+
+        //let = nao pode criar duas variaveis com o mesmo nome, mais utilizado
+        let a = 7;
+        let b = 6;
+        let c = a + b;
+
+        document.getElementById('let').innerHTML = a+" + "+b+" = "+c;
+
+        //nao é necessariamente preciso declarar, mas nao é tao recomendado
+        l = 8
+        m = 2
+        n = l + m
+
+        document.getElementById('nada').innerHTML = l+" + "+m+" = "+n;
+
+        //const = valor que nao pode ser mudado
+        const s = 9
+        const p = 5
+        let u = s + p
+
+        document.getElementById('const').innerHTML = s+" + "+p+" = "+u;
+
+    </script>
+</body>
+</html>
